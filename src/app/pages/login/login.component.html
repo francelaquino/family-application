@@ -1,0 +1,33 @@
+
+ 
+ <div class="container" style="max-width:500px;margin-top:10%">
+   
+   
+    <div class="panel panel-primary" >
+        <h6 style="line-height: 30px;vertical-align: middle ;margin-top:10px;padding-left:15px">Login</h6>
+        <span class="header-line gradient-color-1"></span>
+       <div class="panel-body">
+          
+           <div class="row">
+           <div class="col-md-12" >
+               <div >
+                 <label class="control-label">Mobile No.</label>
+               </div>
+               <input class="form-control "   [(ngModel)]="mobileno" maxlength="200" name="mobileno" autocomplete="off">
+             </div>
+            
+           </div>
+          
+           
+               <div class="col-md-12 text-right">
+                 <hr>
+                 <button type="button" (click)="onLogin()" style="margin-right:10px"   class="btn btn-block btn-success ">Login</button>
+                 <hr>
+                 <button type="button" (click)="onRegister()" style="margin-right:10px"   class="btn btn-block btn-success ">New Registration</button>
+                 
+               </div>
+             </div>
+        
+       
+   </div>
+   </div>

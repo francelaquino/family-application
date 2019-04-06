@@ -1,0 +1,89 @@
+<div  style="padding:10px">
+    <h6 style="line-height: 30px;vertical-align: middle ;margin-top:10px;padding-left:15px;font-weight: bold">Add Family Member</h6>
+    <span class="header-line gradient-color-1" style="margin-bottom:20px"></span>
+    <div class="alert alert-success" role="alert" id="alert1" style="display:none">
+        {{ message }}
+      </div>
+  <form role="form" [formGroup]="formGroupMember">
+    <div class="row">
+      <div class="col-md-4" [ngClass]="hasError('firstnameMember')">
+        <div>
+          <label class="control-label">First Name</label>
+        </div>
+        <input class="form-control " formControlName="firstnameMember" maxlength="200" name="firstnameMember"
+          autocomplete="off">
+      </div>
+
+
+
+
+      <div class="col-md-4" [ngClass]="hasError('genderMember')">
+        <div>
+          <label class="control-label">Gender</label>
+        </div>
+        <select class="form-control" name="genderMember" formControlName="genderMember">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <div class="col-md-4" [ngClass]="hasError('birthdateMember')">
+        <div>
+          <label class="control-label">Birthdate</label>
+        </div>
+        <input class="form-control" maxlength="200" name="birthdateMember" autocomplete="off" formControlName="birthdateMember">
+      </div>
+      <div class="col-md-4" [ngClass]="hasError('maritalstatusMember')">
+        <div>
+          <label class="control-label">Marital Status</label>
+        </div>
+        <select class="form-control" name="maritalstatusMember" formControlName="maritalstatusMember">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+
+      <div class="col-md-4" [ngClass]="hasError('jobstatusMember')">
+        <div>
+          <label class="control-label">Job Status</label>
+        </div>
+        <select class="form-control" name="jobstatusMember" formControlName="jobstatusMember">
+          <option value="Male">Job Status 1</option>
+          <option value="Female">Job Status 1</option>
+          <option value="Female">Job Status 1</option>
+          <option value="Female">Job Status 1</option>
+        </select>
+      </div>
+      <div class="col-md-4" [ngClass]="hasError('emailMember')">
+        <div>
+          <label class="control-label">Email</label>
+        </div>
+        <input class="form-control" maxlength="200" name="emailMember" autocomplete="off" formControlName="emailMember">
+      </div>
+      <div class="col-md-4" [ngClass]="hasError('mobilenoMember')">
+        <div>
+          <label class="control-label">Mobile</label>
+        </div>
+        <input class="form-control" maxlength="200" name="mobilenoMember" autocomplete="off" formControlName="mobilenoMember">
+      </div>
+
+
+      <div class="col-md-8" [ngClass]="hasError('addressMember')">
+        <div>
+          <label class="control-label">Address</label>
+        </div>
+        <input class="form-control" maxlength="300" name="addressMember" autocomplete="off" formControlName="addressMember">
+      </div>
+
+
+     
+     
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-right">
+          <hr>
+          <button type="button" (click)="onSubmit()" style="margin-right:10px" class="btn btn-success btn-sm">Save</button>
+          <button type="button"  (click)="bsModalRef.hide()"  class="btn btn-success  btn-sm">Close</button>
+        </div>
+      </div>
+  </form>
+</div>

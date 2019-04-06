@@ -1,0 +1,23 @@
+p {
+    font-family: Lato;
+  }
+  
+  .text-center{
+    text-align: center;
+  }
+  .card-img-top{
+    width: 100%;
+  }
+  /*Call to Action*/
+  
+  .header-line {
+    height: 2px;
+    width: 100%;
+    content: '';
+    display: block;
+    background-color: cadetblue;
+  }
+  .panel{
+      border:1px solid cadetblue !important;
+  }
+ 

@@ -1,0 +1,127 @@
+
+ 
+ <div class="container" style="margin-top:1%;">
+    <div class="row" style="margin-bottom:10px;margin-top:10px">
+        </div>
+        <div class="row" style="margin-bottom:10px;margin-top:10px">
+            <div class="col-md-12 text-right">
+                <button type="button"    class="btn btn-success " (click)="onLogin()">Login</button>
+            </div>
+          </div>
+ <div class="panel " >
+    <h6 style="line-height: 30px;vertical-align: middle ;margin-top:10px;padding-left:15px">Registration</h6>
+    <span class="header-line gradient-color-1"></span>
+    <div class="panel-body">
+        <form role="form" #myForm="ngForm" [formGroup]="formGroup">
+        <div class="row">
+        <div class="col-md-4" [ngClass]="hasError('firstname')">
+            <div >
+              <label class="control-label">First Name</label>
+            </div>
+            <input class="form-control "  formControlName="firstname"  maxlength="200" name="firstname" autocomplete="off">
+          </div>
+          <div class="col-md-4" [ngClass]="hasError('secondname')">
+            <div >
+              <label class="control-label">Second Name</label>
+            </div>
+            <input class="form-control"   maxlength="200" formControlName="secondname" name="secondname" autocomplete="off">
+          </div>
+          <div class="col-md-4" [ngClass]="hasError('thirdname')">
+            <div >
+              <label class="control-label">Third Name</label>
+            </div>
+            <input class="form-control"   maxlength="200" formControlName="thirdname" name="thirdname" autocomplete="off">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" [ngClass]="hasError('fourthname')">
+              <div >
+                <label class="control-label">Fourth Name</label>
+              </div>
+              <input class="form-control"   maxlength="200" formControlName="fourthname" name="fourthname" autocomplete="off">
+            </div>
+            <div class="col-md-4" [ngClass]="hasError('fifthname')">
+              <div >
+                <label class="control-label">Fifth Name</label>
+              </div>
+              <input class="form-control"   maxlength="200" formControlName="fifthname" name="fifthname" autocomplete="off">
+            </div>
+            <div class="col-md-4" [ngClass]="hasError('sixname')">
+              <div >
+                <label class="control-label">Six Name</label>
+              </div>
+              <input class="form-control"   maxlength="200" formControlName="sixname" name="sixname" autocomplete="off">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" [ngClass]="hasError('gender')">
+              <div >
+                <label class="control-label">Gender</label>
+              </div>
+              <select class="form-control" name="gender" formControlName="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="col-md-4" [ngClass]="hasError('birthdate')">
+              <div >
+                <label class="control-label">Birthdate</label>
+              </div>
+              <input class="form-control"   maxlength="200" name="birthdate" autocomplete="off" formControlName="birthdate">
+            </div>
+            <div class="col-md-4" [ngClass]="hasError('maritalstatus')">
+              <div >
+                <label class="control-label">Marital Status</label>
+              </div>
+              <select class="form-control" name="maritalstatus" formControlName="maritalstatus">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4" [ngClass]="hasError('jobstatus')">
+              <div >
+                <label class="control-label">Job Status</label>
+              </div>
+              <select class="form-control" name="jobstatus" formControlName="jobstatus">
+                <option value="Male">Job Status 1</option>
+                <option value="Female">Job Status 1</option>
+                <option value="Female">Job Status 1</option>
+                <option value="Female">Job Status 1</option>
+              </select>
+            </div>
+            <div class="col-md-4" [ngClass]="hasError('email')" >
+              <div >
+                <label class="control-label">Email</label>
+              </div>
+              <input class="form-control"   maxlength="200" name="email" autocomplete="off" formControlName="email">
+            </div>
+            <div class="col-md-4" [ngClass]="hasError('mobileno')">
+              <div >
+                <label class="control-label">Mobile</label>
+              </div>
+              <input class="form-control"   maxlength="200" name="mobileno" autocomplete="off" formControlName="mobileno">
+            </div>
+        </div>
+        <div class="row">
+           
+              <div class="col-md-12" [ngClass]="hasError('address')">
+              <div >
+                <label class="control-label">Address</label>
+              </div>
+              <input class="form-control"   maxlength="300" name="address" autocomplete="off" formControlName="address">
+            </div>
+       
+        </div>
+       
+        <div class="row" >
+            <div class="col-md-12 text-right">
+              <hr>
+              <button type="button" (click)="onSubmit()"    class="btn btn-success ">Submit</button>
+            </div>
+          </div>
+      </form>
+    
+</div>
+</div>
